@@ -1,0 +1,78 @@
+.main-header .logo {
+    padding: 12px 30px;
+}
+.main-header .logo > img {
+    margin: 0 auto;
+    max-height: 100%;
+}
+.content {
+    min-height: 650px;
+}
+.content .small-box .of-total {
+    font-size: 0.5em;
+}
+.content .box {
+    padding: 5px 10px;
+}
+.navbar-nav > .notifications-menu > .dropdown-menu > li .menu,
+.navbar-nav > .notifications-menu > .dropdown-menu > li > div {
+    max-height: 140px;
+}
+.navbar-nav > .tasks-menu > .dropdown-menu > li .menu,
+.navbar-nav > .tasks-menu > .dropdown-menu > li > div {
+    max-height: 140px;
+}
+td.actions i {
+    margin-right: 10px;
+}
+.error {
+    color: red;
+}
+button > i.fa,
+a > i.fa,
+small > i.fa {
+    /*margin-left: 8px;*/
+}
+.menu li a .fa,
+.tools a .fa {
+    margin-left: 5px;
+}
+.todo-list li small .fa,
+.modal-title .fa,
+td a .fa {
+    margin-right: 5px;
+}
+#boxBrowser .nav-pills li {
+    padding: 10px 10px 10px 15px;
+}
+#feedbacksTable tbody tr.solved > td {
+    text-decoration: line-through;
+}
+#feedbacksTable tbody tr.solved td.icon,
+#feedbacksTable tbody tr.solved td.actions {
+    text-decoration: none;
+}
+.dataTables_length select {
+    border-radius: 0 !important;
+    box-shadow: none;
+    border-color: #d2d6de;
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.btn-search {
+    padding: 4px 12px;
+    border-radius: 0px;
+}

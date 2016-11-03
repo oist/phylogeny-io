@@ -1,0 +1,350 @@
+/**
+ * LAYOUT
+ */
+.error {
+    color: red;
+}
+hr {
+    border-color: #8aa4af;
+}
+.share .content-wrapper {
+    margin: 0px;
+    padding: 0px;
+    min-height: auto;
+}
+.share .main-footer {
+    margin: 0px;
+}
+.main-header {
+    background-color: #3c8dbc;
+}
+.main-header .logo {
+    padding: 12px 30px;
+}
+.main-header .logo > img {
+    margin: 0 auto;
+    max-height: 100%;
+}
+.skin-blue .treeview-menu>li.selected>a,
+.skin-blue .treeview-menu>li>a:hover {
+    color: #fff;
+}
+.treeview-menu label {
+    color: #B8C7CE;
+}
+.treeview-menu input[type=text],
+.treeview-menu select {
+    line-height: 24px;
+    height: 24px;
+    padding: 2px 6px;
+}
+.treeview-menu form {
+    padding: 10px 10px 2px 10px;
+}
+.treeview-menu input.spinner {
+    font-size: 11px;
+    height: 16px;
+    line-height: 1em;
+}
+.sidebar-menu .treeview-menu > li label {
+    color: #8aa4af;
+    font-size: 14px;
+    /*display: block;*/
+    /*padding: 5px 5px 5px 15px;*/
+}
+.sidebar-menu li.subheader {
+    font-size: 12px;
+    color: #8aa4af;
+    padding: 5px;
+}
+#sliderX,
+#sliderY {
+    visibility: hidden;
+}
+#sliderHorizontal {
+    width: 100%;
+}
+#sliderVertical {
+    height: 100%;
+}
+.chart-box {
+    margin-bottom: 0px;
+}
+.chart-box .box-aside {
+    position: absolute;
+    right: 0;
+    height: 75%;
+    width: 30px;
+    margin-right: 20px;
+}
+.chart-box .box-body {
+    margin-right: 60px;
+}
+#message {
+    display: none;
+    padding: 10px 35px 10px 10px;
+    margin-bottom: 15px;
+}
+#shareMessages {
+    display: none;
+}
+.app-version {
+    color: #fff;
+    float: right;
+    font-size: 13px;
+    padding: 15px;
+    text-align: right;
+}
+.main-footer {
+    padding: 5px;
+}
+.main-footer .item {
+    display: inline-block;
+    margin: 5px 10px;
+}
+.main-footer .item .logo {
+    display: inline-block;
+    padding-left: 8px;
+}
+.main-footer .item .logo > img {
+    width: 30px;
+}
+li.nb-slider > label {
+    font-weight: 400;
+    padding-left: 15px;
+}
+li.nb-slider + li {
+    padding: 0 0 10px 5px;
+}
+
+ul[data-menu=layout] hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.sidebar-menu .treeview-menu {
+    padding: 0px 3px;
+}
+#nodeInfo {
+    color: #fff;
+    width: 300px;
+    min-height: 300px;
+    /*height: 500px;*/
+    border-radius: 5px 0 0 5px;
+    background-color: #333;
+    opacity: 0.9;
+    position: fixed;
+    right: -300px;
+    top: 0;
+    margin-top: 150px;
+    /*margin-left: -250px;*/
+}
+#nodeInfo button.close {
+    margin-left: 10px;
+    margin-top: 5px;
+    color: #fff;
+    float: left;
+}
+#nodeInfo .info-content {
+    padding: 15px;
+    margin-top: 15px;
+    height: 100%;
+    width: 100%;
+}
+#nodeInfo .info-content > div:first-child {
+    max-height: 50%;
+    overflow: auto;
+    margin-bottom: 20px;
+}
+#nodeInfo .info-content > div:last-child {
+    height: 80%;
+    width: 100%;
+}
+#nodeInfo .info-content img {
+    max-height: 50%;
+    max-width: 100%;
+}
+/**
+ * UPLOAD FORM
+ */
+#filedrag {
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    padding: 1em 0;
+    margin: 1em;
+    color: #fff;
+    border: 2px dashed #fff;
+    border-radius: 7px;
+    cursor: default;
+    margin-top: -5px;
+}
+#filedrag.hover
+{
+    color: #f00;
+    border-color: #f00;
+    border-style: solid;
+    box-shadow: inset 0 3px 4px #888;
+}
+#uploadButton {
+    display: none;
+}
+#shareChartBtn {
+    margin-left: 5px;
+}
+#jsonSaveDiv {
+    margin-bottom: 15px;
+}
+#jsonSaveDiv > button > i {
+    margin-right: 5px;
+}
+#jsonSaveBtn {
+    margin: 0px;
+}
+#indefiniteMsg {
+    display: none;
+}
+#shareChartUrl {
+    display: none;
+}
+textarea#urlShareInput {
+    cursor: text;
+    background-color: #F5F5F5;
+    width: 100%;
+    resize: vertical;
+    min-height: 70px;
+    padding: 6px 12px;
+    margin-bottom: 15px;
+}
+#copyCodeBtn + label,
+#gotoUrlShareBtn + label,
+#updateShareBtn + label {
+    margin-left: 10px;
+}
+#copyCodeBtn > i,
+#gotoUrlShareBtn > i {
+    margin-right: 5px;
+}
+#updateShareBtn {
+    display: none;
+}
+#colorPickerModal {
+    z-index: 9999;
+}
+#colorPickerModal .modal-dialog {
+    width: 320px;
+}
+#colorPicker > div {
+    padding: 10px;
+    margin: 0 auto;
+    height: auto;
+}
+#colorPicker a {
+    text-decoration: underline;
+}
+#colorPicker div {
+    box-sizing: content-box;
+}
+.color-status {
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    background-color: transparent;
+    margin-right: 5px;
+    float: right;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    margin-top: 3px;
+}
+/**
+ * CHART
+ */
+.node {
+    cursor: pointer;
+    stroke-width: 20px;
+    pointer-events: all;
+}
+.overlay{
+    background-color:#eee;
+}
+.node rect {
+    fill: #fff;
+    stroke: steelblue;
+    stroke-width: 1.5px;
+}
+.node rect.selected,
+.node rect.taxa {
+    fill: orange !important;
+    stroke: #111;
+}
+.node rect.nodeBar {
+    cursor: default;
+}
+.node text {
+    font-size:10px;
+    font-family:sans-serif;
+}
+.link {
+    fill: none;
+    stroke: #ccc;
+    stroke-width: 3px;
+    cursor: pointer;
+}
+.link.selected {
+    fill: none;
+    stroke: orange !important;
+    stroke-width: 7px;
+}
+text.linkText {
+    font-size:10px;
+    font-family:sans-serif;
+    text-decoration: underline;
+}
+.templink {
+    fill: none;
+    stroke: red;
+    stroke-width: 3px;
+}
+.hiddenCircle {
+    display:block;
+}
+.selectedCircle {
+    display:block;
+}
+.d3-tip {
+    z-index: 9999;
+}
+.d3-tip > div {
+    margin-bottom: 4px;
+    font-size: 0.9em;
+}
+.scaleText {
+    text-rendering: optimizeLegibility;
+}
+/**
+ * MODALS
+ */
+.modal .modal-header .fa {
+     margin-right: 8px;
+}
+button > i.fa,
+a > i.fa {
+    margin-left: 5px;
+}
+#welcomeModal.modal {
+    text-align: center;
+}
+@media screen and (min-width: 768px) {
+    #welcomeModal.modal:before {
+        display: inline-block;
+        vertical-align: middle;
+        content: " ";
+        height: 100%;
+    }
+}
+#welcomeModal .modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
