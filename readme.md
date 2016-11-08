@@ -6,7 +6,7 @@ Traditional static publication formats make visualization, exploration and shari
 
 ## Installation
 
-See sub-folders for details.
+The current server is hosted using DigitalOcean droplet, which is configured using LaravelForge.
 
 ## Usage
 
