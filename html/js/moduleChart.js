@@ -781,26 +781,21 @@ define([], function () {
 
                 tree = d3.layout.cluster()
                 .size([viewerHeight, viewerWidth])
-                .separation(function separation(a, b) {
-                    return a.parent == b.parent ? 2 : 1;
-                });
+                .separation(function separation(a, b) { return 1; });
 
                 cluster = d3.layout.cluster()
-                .size([viewerHeight, viewerWidth]);
+                .size([viewerHeight, viewerWidth])
+                .separation(function separation(a, b) { return 1; });
 
                 radialTree = d3.layout.cluster()
                 .size([360, diameter])
                 // .sort(null)
-                .value(function(d) { return d.length; })
                 .children(function(d) { return d.children; })
                 .separation(function(a, b) { return 1; });
 
                 radialCluster = d3.layout.cluster()
                 .size([360, diameter])
-                .separation(function(a, b) {
-                    return 1;
-                    // return a.parent == b.parent ? 1 : 2;
-                });
+                .separation(function(a, b) { return 1; });
             },
 
             projections: function() {
@@ -883,6 +878,7 @@ define([], function () {
             },
 
             calculate: function(data) {
+
                 visit(data, function(d) {
                     totalNodes++;
                     if(d.meta == undefined) {

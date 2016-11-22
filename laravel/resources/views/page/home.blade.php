@@ -96,7 +96,7 @@
 
 @section('scripts')
     <!-- Phylogenetic Scripts -->
-    <script data-main="/assets/js/main" src="/assets/plugins/require/require.js"></script>
+    <script data-main="/assets/js/main" src="/assets/plugins/require/require.js?version=1.0"></script>
     <script type="text/javascript">
         $(document).ready(function() {
             $('#welcomeModal').modal();

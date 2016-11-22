@@ -38,8 +38,8 @@
     <ul class="treeview-menu" data-menu="layout">
         <li><a href="#" data-item="tree"><i class="fa fa-circle-o"></i>&nbsp;Phylogram</a></li>
         <li><a href="#" data-item="cluster"><i class="fa fa-circle-o"></i>&nbsp;Cladogram</a></li>
-        <li><a href="#" data-item="radial-tree"><i class="fa fa-circle-o"></i>&nbsp;Polar Phylogram</a></li>
-        <li><a href="#" data-item="radial-cluster"><i class="fa fa-circle-o"></i>&nbsp;Polar Cladogram</a></li>
+        <li><a href="#" data-item="radial-tree"><i class="fa fa-circle-o"></i>&nbsp;Circular Phylogram</a></li>
+        <li><a href="#" data-item="radial-cluster"><i class="fa fa-circle-o"></i>&nbsp;Circular Cladogram</a></li>
         <hr/>
         <!-- <li class="subheader">DISPLAY</li> -->
         <!-- Node and Link size -->

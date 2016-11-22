@@ -1145,10 +1145,10 @@ define(['moduleChart', 'nexus'], function (moduleChart, nexus) {
                         title = 'Cladogram';
                         break;
                     case 'radial-tree':
-                        title = 'Polar Phylogram';
+                        title = 'Circular Phylogram';
                         break;
                     case 'radial-cluster':
-                        title = 'Polar Cladogram';
+                        title = 'Circular Cladogram';
                         break;
                     default:
 

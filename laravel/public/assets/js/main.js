@@ -1,3 +1,8 @@
+// Prevent Caching
+require.config({
+    urlArgs: "bust=" + (new Date()).getTime()
+});
+
 // Load modules and use them
 require(['moduleData', 'moduleChart', 'nexus'], function(moduleData, moduleChart){
 
