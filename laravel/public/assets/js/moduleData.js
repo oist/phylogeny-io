@@ -46,13 +46,12 @@ define(['moduleChart', 'nexus'], function (moduleChart, nexus) {
             var $example = $('.example');
             $example.on('click', function(e) {
                 e.preventDefault();
-                that = this;
+                var that = this;
                 moduleData.loadingStart();
                 var exampleId = $(that).data('id');
                 var filename = $(that).data('file');
                 var extension = filename.split('.').pop();
-                var baseUrl = window.location.origin;
-                var url = baseUrl + '/assets/examples/' + filename;
+                var url = 'assets/examples/' + filename;
                 var fileContent = $.ajax({type: "GET", url: url, async: false}).responseText;
 
 
@@ -946,7 +945,7 @@ define(['moduleChart', 'nexus'], function (moduleChart, nexus) {
 
                 $('.ui-spinner-input').on('keyup keydown', function(e) {
                     // e.preventDefault();
-                    that = this;
+                    var that = this;
                     if(e.keyCode == 13) {
                         $(that).trigger('change');
                     }
@@ -985,6 +984,7 @@ define(['moduleChart', 'nexus'], function (moduleChart, nexus) {
                             case 'annotation':
                             var element = $form.find('input[data-action=annotation]');
                             var checked = (value == 'show') ? true : false;
+                            $(element).prop('checked', checked);
                             break;
                             case 'display':
                             if(menu == 'node-bars') {

@@ -1313,6 +1313,7 @@ define([], function () {
                 .style('font-family', function(d) {
                     return settings.menu['tip-labels'].fontfamily;
                 })
+                .style('font-style', 'italic')
                 .style("fill", function(d) {
                     var fill = leafLabelColor;
                     if(settings.nexusAttrMinMax[settings.menu['tip-labels'].colorby] != undefined) {
