@@ -18,7 +18,7 @@ Documentation is available at [http://about.phylogeny.io]([http://about.phylogen
 
 ## License
 
-We would like to thank Marie Uemura for help in annotating the example tree with images from AntWeb.org, and Evan Economo, as well as members of the Ecology and Evolution Unit for feedback on the project. We are grateful to Alopex Interaction Design LLC for creating the project logo. We are grateful for examples and open-source code by [Rob Schmuecker](http://www.robschmuecker.com/d3-js-drag-and-drop-zoomable-tree/), [Ken-ichi Ueda](http://bl.ocks.org/kueda/1036776) and [Jason Davies](https://www.jasondavies.com/tree-of-life/). We would like to thank [Abdullah Almsaeed](https://almsaeedstudio.com/themes/AdminLTE/index2.html) for developing the AdmiLTE theme.
+We would like to thank Marie Uemura for help in annotating the example tree with images from AntWeb.org, and Evan Economo, as well as members of the Ecology and Evolution Unit for feedback on the project. We are grateful to Alopex Interaction Design LLC for creating the project logo. We are grateful for examples and open-source code by [Rob Schmuecker](http://www.robschmuecker.com/d3-js-drag-and-drop-zoomable-tree/), [Ken-ichi Ueda](http://bl.ocks.org/kueda/1036776), [Jason Davies](https://www.jasondavies.com/tree-of-life/) and [Jason Davies](https://github.com/exupero/saveSvgAsPng). We would like to thank [Abdullah Almsaeed](https://almsaeedstudio.com/themes/AdminLTE/index2.html) for developing the AdmiLTE theme.
 
 Funding for this work has been provided by the Okinawa Institute of Science and Technology Graduate University.
 
