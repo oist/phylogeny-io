@@ -624,12 +624,12 @@ function parse_nexus(str)
 
 	if (nx.IsNexusFile())
 	{
-		//console.log('Is a NEXUS file');
+		console.log('Is a NEXUS file');
 	}
 
 	var blockname = nx.GetBlock();
 
-	//console.log("BLOCK="+blockname);
+	console.log("BLOCK="+blockname);
 
 
 	if (blockname == 'taxa')
@@ -664,7 +664,6 @@ function parse_nexus(str)
 		}
 
 		blockname = nx.GetBlock();
-
 	}
 
 
@@ -680,7 +679,6 @@ function parse_nexus(str)
 			&& (nx.error == NexusError.ok)
 			)
 		{
-			// console.log(command);
 
 			switch (command)
 			{
@@ -693,13 +691,14 @@ function parse_nexus(str)
 					while (!done && (nx.error == NexusError.ok))
 					{
 						var t = nx.GetToken();
-
-						if ([TokenTypes.Number, TokenTypes.String, TokenTypes.QuotedString].indexOf(t) != -1)
+						// Zhi Huang: add TokenTypes.Comma
+						if ([TokenTypes.Number, TokenTypes.Comma, TokenTypes.String, TokenTypes.QuotedString].indexOf(t) != -1)
 						{
 							var otu = nx.buffer;
 							t = nx.GetToken();
 
-							if ([TokenTypes.Number, TokenTypes.String, TokenTypes.QuotedString].indexOf(t) != -1)
+						// Zhi Huang: add TokenTypes.Comma
+							if ([TokenTypes.Number, TokenTypes.Comma, TokenTypes.String, TokenTypes.QuotedString].indexOf(t) != -1)
 							{
 								// cast otu to string
 								nexus.treesblock.translate[String(otu)] = nx.buffer;
@@ -711,6 +710,14 @@ function parse_nexus(str)
 								{
 									case TokenTypes.Comma:
 										break;
+										
+									// Zhi Huang: add case Number
+									case TokenTypes.Number:
+										break;
+
+									// Zhi Huang: add case String
+									case TokenTypes.String:
+										break;
 
 									case TokenTypes.SemiColon:
 										done = true;
@@ -720,11 +727,13 @@ function parse_nexus(str)
 										nx.error = NexusError.syntax;
 										break;
 								}
+
 							}
 							else
 							{
 								nx.error = NexusError.syntax;
 							}
+
 						}
 						else
 						{
@@ -738,6 +747,7 @@ function parse_nexus(str)
 				case 'tree':
 					if (command == 'tree')
 					{
+
 						var tree = {};
 
 						t = nx.GetToken();
@@ -778,8 +788,9 @@ function parse_nexus(str)
 					command = nx.GetCommand();
 					break;
 
+				
 				default:
-					//echo "Command to skip: $command\n";
+					console.log("Command to skip: " + command);
 					nx.SkipCommand();
 					command = nx.GetCommand();
 					break;
