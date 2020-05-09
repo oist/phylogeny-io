@@ -624,12 +624,12 @@ function parse_nexus(str)
 
 	if (nx.IsNexusFile())
 	{
-		console.log('Is a NEXUS file');
+		//console.log('Is a NEXUS file');
 	}
 
 	var blockname = nx.GetBlock();
 
-	console.log("BLOCK="+blockname);
+	//console.log("BLOCK="+blockname);
 
 
 	if (blockname == 'taxa')
@@ -691,13 +691,10 @@ function parse_nexus(str)
 					while (!done && (nx.error == NexusError.ok))
 					{
 						var t = nx.GetToken();
-						// Zhi Huang: add TokenTypes.Comma
 						if ([TokenTypes.Number, TokenTypes.Comma, TokenTypes.String, TokenTypes.QuotedString].indexOf(t) != -1)
 						{
 							var otu = nx.buffer;
 							t = nx.GetToken();
-
-						// Zhi Huang: add TokenTypes.Comma
 							if ([TokenTypes.Number, TokenTypes.Comma, TokenTypes.String, TokenTypes.QuotedString].indexOf(t) != -1)
 							{
 								// cast otu to string
@@ -711,11 +708,9 @@ function parse_nexus(str)
 									case TokenTypes.Comma:
 										break;
 										
-									// Zhi Huang: add case Number
 									case TokenTypes.Number:
 										break;
 
-									// Zhi Huang: add case String
 									case TokenTypes.String:
 										break;
 
