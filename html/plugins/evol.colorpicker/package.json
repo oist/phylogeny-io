@@ -21,7 +21,7 @@
     },
     "bugs": "https://github.com/evoluteur/colorpicker/issues",
     "dependencies": {
-        "jquery": "~1.7.0",
+        "jquery": "~3.5.1",
         "jquery-ui": "~1.8.0"
     },
     "devDependencies": {
